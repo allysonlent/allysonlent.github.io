@@ -58,22 +58,12 @@
       }
       #hero.page-row {
         padding: 0;
-        height: 40%;
         overflow: hidden;
-      }
-      #hero.page-row > div {
-        margin-top: -10%
       }
       #topics.page-row ul {
         list-style: circle;
       }
       @media (min-width: 45rem) {
-        p:first-child {
-          margin-top: 0;
-        }
-        * + p {
-          margin-top: 1rem;
-        }
         .page-row {
           display: grid;
           grid-template-columns: repeat(6, 1fr);
@@ -84,13 +74,22 @@
         #hero .page-content {
           grid-column: 1 / span 6;
         }
-        #topics.page-row ul {
-          column-count: 2;
+        #hero.page-row {
+          height: 50%;
+        }
+        #hero.page-row > div {
+          margin-top: -10%
         }
       }
       @media (min-width: 55rem) {
         h1, h2, h3, h4, h5 {
           margin: 0;
+        }
+        p:first-child {
+          margin-top: 0;
+        }
+        * + p {
+          margin-top: 1rem;
         }
         .page-row {
           display: grid;
@@ -130,6 +129,12 @@
         #topics.page-row ul {
           column-count: 3;
         }
+        #hero.page-row {
+          height: 40%;
+        }
+        #hero.page-row > div {
+          margin-top: -20%
+        }
       }
       @media (min-width: 65rem) {
         .page-row {
@@ -141,6 +146,12 @@
         }
         #hero .page-content {
           grid-column: 1 / span 16;
+        }
+        #hero.page-row {
+          height: 60%;
+        }
+        #hero.page-row > div {
+          margin-top: -20%
         }
       }
     </style>
@@ -160,7 +171,30 @@
         </div>
       </div>
     </div>
+    <div id="hero" class="page-row">
+      <div class="page-content">
+        <img src="images/723FE7C8-B729-45CA-B812-0F26E425A2AF.jpg" \
+          alt="The California coast along Route 1"
+          srcset="images/723FE7C8-B729-45CA-B812-0F26E425A2AF-2.jpg 800w,
+          images/723FE7C8-B729-45CA-B812-0F26E425A2AF.jpg 1600w"
+          sizes="(max-width: 400px) 800px, 1600px" />
+      </div>
+    </div>
     <!-- <div id="services" class="page-row"><div class="page-content"></div></div> -->
+    <div id="info" class="page-row">
+      <div class="page-content">
+        <div>
+          <img src="images/20191013_125619.jpg" alt="Profile picture of Allyson Lent, LCSW" />
+        </div>
+        <div class="right">
+          <p>Many things can impact our ability to fully engage in our lives: life transitions, anxieties, depression, difficult and painful relationship patterns, and past experiences are just a few.</p>
+          <p>I believe that a caring and non-judgmental therapeutic relationship can help clients process these struggles, build self-understanding and compassion, and learn new ways to be in relationship with others. In the process of working together, I strive to nurture the uniqueness and wisdom of my clients to promote greater well-being.</p>
+          <p>My practice is based  in a relational and psychodynamic approach. This approach emphasizes a sense of connection and “therapeutic fit” which I believe is particularly important in cultivating change. I pay close attention to how early relationships and experiences shape who we are, as well as how various parts of our identity can influence how we experience and move through the world. I also utilize cognitive and behavioral treatment methods, believing it can be beneficial to draw on a variety of modalities to support my clients in effectively working toward their goals and addressing challenges in their lives.</p>
+          <p>I have particular expertise in the treatment of anxiety, depression and problems related to trauma and abuse. I provide therapeutic support to the LGBTQIAA+ community and provide gender-affirming care to people who identify as trans, non-binary/queer/gender expansive. This expertise includes completing letters of support for those seeking gender-affirming surgery as part of their transition process.</p>
+        </div>
+      </div>
+    </div>
+
     <div id="topics" class="page-row">
       <div class="page-content">
         <div>
@@ -180,24 +214,6 @@
             <li>Family Planning & Building</li>
           </ul>
         </div>
-      </div>
-    </div>
-    <div id="info" class="page-row">
-      <div class="page-content">
-        <div>
-          <img src="images/20191013_125619.jpg" />
-        </div>
-        <div class="right">
-          <p>Many things can impact our ability to fully engage in our lives: life transitions, anxieties, depression, difficult and painful relationship patterns, and past experiences are just a few.</p>
-          <p>I believe that a caring and non-judgmental therapeutic relationship can help clients process these struggles, build self-understanding and compassion, and learn new ways to be in relationship with others. In the process of working together, I strive to nurture the uniqueness and wisdom of my clients to promote greater well-being.</p>
-          <p>My practice is based  in a relational and psychodynamic approach. This approach emphasizes a sense of connection and “therapeutic fit” which I believe is particularly important in cultivating change. I pay close attention to how early relationships and experiences shape who we are, as well as how various parts of our identity can influence how we experience and move through the world. I also utilize cognitive and behavioral treatment methods, believing it can be beneficial to draw on a variety of modalities to support my clients in effectively working toward their goals and addressing challenges in their lives.</p>
-          <p>I have particular expertise in the treatment of anxiety, depression and problems related to trauma and abuse. I provide therapeutic support to the LGBTQIAA+ community and provide gender-affirming care to people who identify as trans, non-binary/queer/gender expansive. This expertise includes completing letters of support for those seeking gender-affirming surgery as part of their transition process.</p>
-        </div>
-      </div>
-    </div>
-    <div id="hero" class="page-row">
-      <div class="page-content">
-        <img src="images/723FE7C8-B729-45CA-B812-0F26E425A2AF.jpg" />
       </div>
     </div>
     <div id="footer" class="page-row">

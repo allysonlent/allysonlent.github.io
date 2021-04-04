@@ -1,7 +1,11 @@
 <html>
   <head>
+    <title>Allyson Lent, LCSW</title>
     <meta name="robots" content="noindex, nofollow">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta name="description" content="Allyson Lent is a Licensed Clincal Social Worker in the state of California">
+    <meta name="keywords" content="therapy, individual therapy, psychotherapy, lcsw, trauma, trauma therapy, anxiety, anxiety treatment, depression, depression therapy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <style>
@@ -13,7 +17,7 @@
         margin: 0;
       }
       p {
-        margin: 0;
+        margin-top: 1rem;
       }
       h1, h2, h3, h4, h5 {
         font-family: 'Lora', serif;
@@ -28,9 +32,6 @@
         font-size: 2em;
         font-weight: 400;
       }
-      * + p {
-        margin-top: 1rem;
-      }
       img {
         max-width: 100%;
       }
@@ -44,21 +45,35 @@
       }
       .page-row {
         padding-top: 1rem;
-        padding-right: 1rem;
+        padding-right: 2rem;
         padding-bottom: 1rem;
-        padding-left: 1rem;
+        padding-left: 2rem;
       }
-      #services {
-        background-color: #3d4435;
+      #topics {
+        background-color: #374661;
         color: white;
       }
       #info {
-        background-color: wheat;
+        background-color: aliceblue;
       }
       #hero.page-row {
         padding: 0;
+        height: 40%;
+        overflow: hidden;
+      }
+      #hero.page-row > div {
+        margin-top: -10%
+      }
+      #topics.page-row ul {
+        list-style: circle;
       }
       @media (min-width: 45rem) {
+        p:first-child {
+          margin-top: 0;
+        }
+        * + p {
+          margin-top: 1rem;
+        }
         .page-row {
           display: grid;
           grid-template-columns: repeat(6, 1fr);
@@ -68,6 +83,9 @@
         }
         #hero .page-content {
           grid-column: 1 / span 6;
+        }
+        #topics.page-row ul {
+          column-count: 2;
         }
       }
       @media (min-width: 55rem) {
@@ -90,7 +108,7 @@
           column-gap: 2rem;
         }
         #header .page-content > *:nth-child(2) {
-          align-self: end;
+          align-self: start;
           justify-self: end;
         }
         #services .page-content {
@@ -108,6 +126,9 @@
         }
         #info .page-content > *:nth-child(2) {
           grid-column: 3 / span 3;
+        }
+        #topics.page-row ul {
+          column-count: 3;
         }
       }
       @media (min-width: 65rem) {
@@ -139,32 +160,32 @@
         </div>
       </div>
     </div>
-    <div id="hero" class="page-row">
+    <!-- <div id="services" class="page-row"><div class="page-content"></div></div> -->
+    <div id="topics" class="page-row">
       <div class="page-content">
-        <img src="http://placekitten.com/g/2400/400" />
+        <div>
+          <ul>
+            <li>Trauma and PTSD</li>
+            <li>Anxiety</li>
+            <li>Depression</li>
+            <li>Life Transitions</li>
+            <li>Gender</li>
+            <li>Sexuality</li>
+            <li>Relationship Issues</li>
+            <li>Stress</li>
+            <li>Women’s Issues</li>
+            <li>Grief & Loss</li>
+            <li>Work & School Issues</li>
+            <li>Self-Esteem</li>
+            <li>Family Planning & Building</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <!--
-    <div id="services" class="page-row">
-      <div class="page-content">
-        <div>
-          <h2>Individual Therapy</h2>
-          <p>Placeholder content</p>
-        </div>
-        <div>
-          <h2>Gender Affirming Services</h2>
-          <p>Placeholder content</p>
-        </div>
-        <div>
-          <h2>Life Guidance</h2>
-          <p>Placeholder content</p>
-        </div>
-      </div>
-    </div> -->
     <div id="info" class="page-row">
       <div class="page-content">
         <div>
-          <img src="http://placekitten.com/g/300/400" />
+          <img src="images/20191013_125619.jpg" />
         </div>
         <div class="right">
           <p>Many things can impact our ability to fully engage in our lives: life transitions, anxieties, depression, difficult and painful relationship patterns, and past experiences are just a few.</p>
@@ -172,6 +193,11 @@
           <p>My practice is based  in a relational and psychodynamic approach. This approach emphasizes a sense of connection and “therapeutic fit” which I believe is particularly important in cultivating change. I pay close attention to how early relationships and experiences shape who we are, as well as how various parts of our identity can influence how we experience and move through the world. I also utilize cognitive and behavioral treatment methods, believing it can be beneficial to draw on a variety of modalities to support my clients in effectively working toward their goals and addressing challenges in their lives.</p>
           <p>I have particular expertise in the treatment of anxiety, depression and problems related to trauma and abuse. I provide therapeutic support to the LGBTQIAA+ community and provide gender-affirming care to people who identify as trans, non-binary/queer/gender expansive. This expertise includes completing letters of support for those seeking gender-affirming surgery as part of their transition process.</p>
         </div>
+      </div>
+    </div>
+    <div id="hero" class="page-row">
+      <div class="page-content">
+        <img src="images/723FE7C8-B729-45CA-B812-0F26E425A2AF.jpg" />
       </div>
     </div>
     <div id="footer" class="page-row">

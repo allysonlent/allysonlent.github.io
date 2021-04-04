@@ -24,7 +24,7 @@
         font-size: 1.5rem;
         margin: 0;
       }
-      h2, h3, h4, h5 {
+      h3, h4, h5 {
         margin: 2rem 0 0 0;
       }
       h1 {
@@ -36,7 +36,6 @@
         max-width: 100%;
       }
       ul {
-        margin: 0;
         padding: 0;
         list-style: none;
       }
@@ -44,9 +43,9 @@
         color: inherit;
       }
       .page-row {
-        padding-top: 1rem;
+        padding-top: 1.4rem;
         padding-right: 2rem;
-        padding-bottom: 1rem;
+        padding-bottom: 1.4rem;
         padding-left: 2rem;
       }
       #topics {
@@ -55,6 +54,9 @@
       }
       #info {
         background-color: aliceblue;
+      }
+      #contactme {
+        background-color: #F3F3F3;
       }
       #hero.page-row {
         padding: 0;
@@ -79,6 +81,9 @@
         }
         #hero.page-row > div {
           margin-top: -10%
+        }
+        #topics.page-row ul {
+          column-count: 2;
         }
       }
       @media (min-width: 55rem) {
@@ -165,14 +170,14 @@
         </div>
         <div>
           <ul>
-          <li>Phone: <a href="tel:650-338-6601">(650) 338-6601</a></li>
-          <li>Email: <a href="mailto:allylent@gmail.com">allylent@gmail.com</a></li>
+            <li>Phone: <a href="tel:650-338-6601">(650) 338-6601</a></li>
+            <li>Email: <a href="mailto:allylent@gmail.com">allylent@gmail.com</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div id="hero" class="page-row">
-      <div class="page-content">
+      <div class="page-content" role="banne">
         <img src="images/723FE7C8-B729-45CA-B812-0F26E425A2AF.jpg" \
           alt="The California coast along Route 1"
           srcset="images/723FE7C8-B729-45CA-B812-0F26E425A2AF-2.jpg 800w,
@@ -182,7 +187,7 @@
     </div>
     <!-- <div id="services" class="page-row"><div class="page-content"></div></div> -->
     <div id="info" class="page-row">
-      <div class="page-content">
+      <div class="page-content" role="main">
         <div>
           <img src="images/20170929_162601.jpg" alt="Profile picture of Allyson Lent, LCSW" />
         </div>
@@ -197,23 +202,33 @@
 
     <div id="topics" class="page-row">
       <div class="page-content">
-        <div>
-          <ul>
-            <li>Trauma and PTSD</li>
-            <li>Anxiety</li>
-            <li>Depression</li>
-            <li>Life Transitions</li>
-            <li>Gender</li>
-            <li>Sexuality</li>
-            <li>Relationship Issues</li>
-            <li>Stress</li>
-            <li>Women’s Issues</li>
-            <li>Grief & Loss</li>
-            <li>Work & School Issues</li>
-            <li>Self-Esteem</li>
-            <li>Family Planning & Building</li>
-          </ul>
-        </div>
+        <h2>Areas of Specialty</h2>
+        <ul>
+          <li>Trauma and PTSD</li>
+          <li>Anxiety</li>
+          <li>Depression</li>
+          <li>Life Transitions</li>
+          <li>Gender</li>
+          <li>Sexuality</li>
+          <li>Relationship Issues</li>
+          <li>Stress</li>
+          <li>Women’s Issues</li>
+          <li>Grief & Loss</li>
+          <li>Work & School Issues</li>
+          <li>Self-Esteem</li>
+          <li>Family Planning & Building</li>
+        </ul>
+      </div>
+    </div>
+    <div id="contactme" class="page-row">
+      <div class="page-content" role="complementary">
+        <h2>Contact Me</h2>
+        <p>I offer a free 15-minute phone consultation prior to a first session. Please contact me to learn more.</p>
+        <ul>
+          <li>Phone: <a href="tel:650-338-6601">(650) 338-6601</a></li>
+          <li>Email: <a href="mailto:allylent@gmail.com">allylent@gmail.com</a></li>
+        </ul>
+        <p><em>All sessions currently conducted via Telehealth</em></p>
       </div>
     </div>
     <div id="footer" class="page-row">
